@@ -10,7 +10,9 @@ defineProps<{
 <template>
   <div class="flex flex-col gap-4">
     <h2 class="text-lg font-bold"> {{ title }}</h2>
-    <img :src="imgSrc" class="w-[500px]" />
+    <div class="flex justify-center md:justify-start md:pl-6">
+      <img :src="imgSrc" class="w-[500px] border-8 border-white shadow-md" />
+    </div>
     <p>
       <slot></slot>
     </p>

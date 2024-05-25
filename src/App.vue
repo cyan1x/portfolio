@@ -9,7 +9,7 @@ import ProjectCard from './components/ProjectCard.vue';
   <header>
   </header>
 
-  <main class="min-h-screen flex justify-center lg:justify-start lg:pl-32 p-8 pt-20">
+  <main class="min-h-screen flex justify-center lg:justify-center p-8 pt-20">
     <div class="lg:w-[44rem] flex flex-col gap-8">
       <div class="flex flex-col gap-4">
         <h2 class="text-4xl lg:text-5xl font-medium">Cyanix<span class="text-base text-gray-500 font-medium ml-2">aka
@@ -17,31 +17,40 @@ import ProjectCard from './components/ProjectCard.vue';
         </h2>
 
         <p class="text-lg leading-loose">
-          Hey—I'm <span class="font-bold">Cyanix</span>, a <InlineCode>web developer</InlineCode>
+          Hey—I'm <span class="font-bold">Cyanix</span>, a <InlineCode>web developer</InlineCode>,
           <br class="sm:hidden" />
-          and a Japanese to English <InlineCode>translator</InlineCode>.
+          <InlineCode>translator</InlineCode>,
+          and aspiring <InlineCode>interpreter</InlineCode>.
         </p>
       </div>
 
-      <hr class="h-0.5 bg-gray-200" />
+      <hr class="h-1 bg-gray-200" />
 
       <p class="text-lg leading-relaxed">
         <span class="font-bold">As a <InlineCode class="font-bold">web developer</InlineCode>,</span>
         <br />
         most of my experience has been working with web technologies,
         writing TypeScript code,
-        building frontend UIs using Vue.js and creating Discord chatbots on the backend.
+        building frontend UIs using Vue.js and occasionally creating Discord chat bots on the backend.
       </p>
       <p class="text-lg leading-relaxed">
-        <span class="font-bold">As a <InlineCode>translator</InlineCode>,</span>
+        <span class="font-bold">As a Japanese-English <InlineCode>translator</InlineCode>,</span>
         <br />
         I've worked on a wide variety of Japanese media, mainly anime,
         checking the work of other translators for errors, giving suggestions, as well as translating entire
         scripts
         by myself.
       </p>
+      <p class="text-lg leading-relaxed">
+        <span class="font-bold">As an aspiring <InlineCode>interpreter</InlineCode>,</span>
+        <br />
+        I'm on the lookout for opportunities where I can apply my skills as a fluent Japanese speaker,
+        Japanese-English translator, and front-end web developer.
+      </p>
 
-      <hr class="h-0.5 bg-gray-200" />
+      <p class="italic">You can find examples of my work below.</p>
+
+      <hr class="h-1 bg-gray-200" />
 
       <h2 class="text-2xl font-bold">Projects</h2>
       <ProjectCard title="vtuber-recs" :imgSrc="VtuberRecs" flavorText="Check it out at"
@@ -50,17 +59,21 @@ import ProjectCard from './components/ProjectCard.vue';
         tags and links for each.
         <template #tech-stack>
           <div>
-            <table class="border-collapse">
+            <table>
               <tr>
-                <th class="border-2 p-2" colspan="2">Teck stack</th>
+                <th class="border-2 border-gray-300 p-2" colspan="2">Teck stack</th>
               </tr>
               <tr>
-                <td class="border-2 p-2">Framework</td>
-                <td class="border-2 p-2"><a href="https://vuejs.org/">Vue.js</a></td>
+                <td class="border-2 border-gray-300 p-2">Framework</td>
+                <td class="border-2 border-gray-300 p-2"><a href="https://vuejs.org/">Vue.js</a></td>
               </tr>
               <tr>
-                <td class="border-2 p-2">Styling</td>
-                <td class="border-2 p-2"><a href="https://tailwindcss.com/">Tailwind CSS</a></td>
+                <td class="border-2 border-gray-300 p-2">Styling</td>
+                <td class="border-2 border-gray-300 p-2"><a href="https://tailwindcss.com/">Tailwind CSS</a></td>
+              </tr>
+              <tr>
+                <td class="border-2 border-gray-300 p-2">Components</td>
+                <td class="border-2 border-gray-300 p-2"><a href="https://daisyui.com/">daisyUI</a></td>
               </tr>
             </table>
           </div>
