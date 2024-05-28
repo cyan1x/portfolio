@@ -2,6 +2,7 @@
 import InlineCode from './components/InlineCode.vue'
 import VtuberRecs from './assets/vtuber-recs.jpg'
 import JPQuizWeb from './assets/jp-quiz-web.jpg'
+import Tempest from './assets/tempest.png'
 import ProjectCard from './components/ProjectCard.vue';
 </script>
 
@@ -69,6 +70,48 @@ import ProjectCard from './components/ProjectCard.vue';
               </tr>
               <tr>
                 <td class="border-2 border-gray-300 p-2">Styling</td>
+                <td class="border-2 border-gray-300 p-2">Plain CSS</td>
+              </tr>
+            </table>
+          </div>
+        </template>
+      </ProjectCard>
+      <ProjectCard title="jp-quiz-web" :imgSrc="JPQuizWeb" flavorText="Play it at" link="https://jp-quiz.netlify.app/">
+        Test your Japanese (or English!) skills on this fast-paced, <a class="link"
+          href="https://monkeytype.com/">Monkeytype</a>-inspired quiz game.
+        <template #tech-stack>
+          <div>
+            <table>
+              <tr>
+                <th class="border-2 border-gray-300 p-2" colspan="2">Teck stack</th>
+              </tr>
+              <tr>
+                <td class="border-2 border-gray-300 p-2">Framework</td>
+                <td class="border-2 border-gray-300 p-2"><a href="https://vuejs.org/">Vue.js</a></td>
+              </tr>
+              <tr>
+                <td class="border-2 border-gray-300 p-2">Styling</td>
+                <td class="border-2 border-gray-300 p-2"><a href="https://tailwindcss.com/">Tailwind CSS</a></td>
+              </tr>
+            </table>
+          </div>
+        </template>
+      </ProjectCard>
+      <ProjectCard title="Tempest" :imgSrc="Tempest" flavorText="Under construction">
+        A highly customizable desktop application for managing videos and tracking total time watched.
+        <template #tech-stack>
+          <div>
+            <table>
+              <tr>
+                <th class="border-2 border-gray-300 p-2" colspan="2">Teck stack</th>
+              </tr>
+              <tr>
+                <td class="border-2 border-gray-300 p-2">Framework</td>
+                <td class="border-2 border-gray-300 p-2"><a href="https://www.electronjs.org/">Electron</a>, <a
+                    href="https://vuejs.org/">Vue.js</a></td>
+              </tr>
+              <tr>
+                <td class="border-2 border-gray-300 p-2">Styling</td>
                 <td class="border-2 border-gray-300 p-2"><a href="https://tailwindcss.com/">Tailwind CSS</a></td>
               </tr>
               <tr>
@@ -78,10 +121,6 @@ import ProjectCard from './components/ProjectCard.vue';
             </table>
           </div>
         </template>
-      </ProjectCard>
-      <ProjectCard title="jp-quiz-web" :imgSrc="JPQuizWeb" flavorText="Try it at" link="https://jp-quiz.netlify.app/">
-        Test your Japanese (or English!) skills on this fast-paced, <a class="link"
-          href="https://monkeytype.com/">Monkeytype</a>-inspired quiz game.
       </ProjectCard>
     </div>
   </main>
