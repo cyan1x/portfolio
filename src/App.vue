@@ -151,6 +151,27 @@ import ProjectCard from './components/ProjectCard.vue';
           </div>
         </template>
       </ProjectCard>
+      <ProjectCard title="This website" flavorText="You can find the code at"
+        link="https://github.com/cyan1x/portfolio/">
+        A minimalistic portfolio website, designed by yours truly.
+        <template #tech-stack>
+          <div>
+            <table>
+              <tr>
+                <th class="border-2 border-gray-300 p-2" colspan="2">Teck stack</th>
+              </tr>
+              <tr>
+                <td class="border-2 border-gray-300 p-2">Framework</td>
+                <td class="border-2 border-gray-300 p-2"><a href="https://vuejs.org/">Vue.js</a></td>
+              </tr>
+              <tr>
+                <td class="border-2 border-gray-300 p-2">Styling</td>
+                <td class="border-2 border-gray-300 p-2"><a href="https://tailwindcss.com/">Tailwind CSS</a></td>
+              </tr>
+            </table>
+          </div>
+        </template>
+      </ProjectCard>
     </div>
   </main>
 </template>
