@@ -18,7 +18,7 @@ import ProjectCard from './components/ProjectCard.vue';
         </h2>
 
         <p class="text-lg leading-loose">
-          Hey—I'm <span class="font-bold">Cyanix</span>, a <InlineCode>web developer</InlineCode>,
+          Hey—I'm <span class="font-bold">Cyanix</span>, a trilingual <InlineCode>web developer</InlineCode>,
           <br class="sm:hidden" />
           <InlineCode>translator</InlineCode>,
           and aspiring <InlineCode>interpreter</InlineCode>.
@@ -37,7 +37,7 @@ import ProjectCard from './components/ProjectCard.vue';
       <p class="text-lg leading-relaxed">
         <span class="font-bold">As a Japanese-English <InlineCode>translator</InlineCode>,</span>
         <br />
-        I've worked on a wide variety of Japanese media, mainly anime,
+        I've worked on a wide variety of Japanese media, such as YouTube videos,
         checking the work of other translators for errors, giving suggestions, as well as translating entire
         scripts
         by myself.
@@ -45,7 +45,7 @@ import ProjectCard from './components/ProjectCard.vue';
       <p class="text-lg leading-relaxed">
         <span class="font-bold">As an aspiring <InlineCode>interpreter</InlineCode>,</span>
         <br />
-        I'm on the lookout for opportunities where I can apply my skills as a fluent Japanese speaker,
+        I'm on the lookout for opportunities where I can apply my skills as a native-level Japanese speaker,
         Japanese-English translator, and front-end web developer.
       </p>
 
@@ -106,7 +106,7 @@ import ProjectCard from './components/ProjectCard.vue';
         </template>
       </ProjectCard>
       <ProjectCard title="jp-quiz-web" :imgSrc="JPQuizWeb" flavorText="Play it at" link="https://jp-quiz.netlify.app/">
-        Test your Japanese (or English!) skills on this fast-paced, <a class="link"
+        Test your Japanese (or English!) skills on this <a class="link"
           href="https://monkeytype.com/">Monkeytype</a>-inspired quiz game.
         <template #tech-stack>
           <div>
