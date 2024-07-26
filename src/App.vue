@@ -54,6 +54,35 @@ import ProjectCard from './components/ProjectCard.vue';
       <hr class="h-1 bg-gray-200" />
 
       <h2 class="text-2xl font-bold">Projects</h2>
+      <ProjectCard title="rest-api (日本語解説あり)" flavorText="Read about it at" link="https://github.com/cyan1x/rest-api/">
+        A full-featured REST API backend for a (hypothetical) mobile app that tracks runs, such as sprints and
+        marathons.
+        <template #tech-stack>
+          <div>
+            <table>
+              <tr>
+                <th class="border-2 border-gray-300 p-2" colspan="2">Teck stack</th>
+              </tr>
+              <tr>
+                <td class="border-2 border-gray-300 p-2">Framework</td>
+                <td class="border-2 border-gray-300 p-2">Express.js</td>
+              </tr>
+              <tr>
+                <td class="border-2 border-gray-300 p-2">Database</td>
+                <td class="border-2 border-gray-300 p-2">PostgreSQL</td>
+              </tr>
+              <tr>
+                <td class="border-2 border-gray-300 p-2">ORM</td>
+                <td class="border-2 border-gray-300 p-2">TypeORM</td>
+              </tr>
+              <tr>
+                <td class="border-2 border-gray-300 p-2">Testing</td>
+                <td class="border-2 border-gray-300 p-2">Chai, Mocha, Sinon.JS, Faker, Supertest</td>
+              </tr>
+            </table>
+          </div>
+        </template>
+      </ProjectCard>
       <ProjectCard title="vtuber-recs" :imgSrc="VtuberRecs" flavorText="Check it out at"
         link="https://vtuber-recs.netlify.app/">
         A recommendation list for any Japanese learner/speaker wanting to get into VTubers, complete with descriptions,
