@@ -20,7 +20,7 @@ defineProps<{
     <p v-if="flavorText" class="italic text-gray-500 border-l-4 pl-2">
       {{ flavorText }}
       <br class="sm:hidden" />
-      <a v-if="link" :href="link">{{ link }}</a>
+      <a v-if="link" :href="link" target=”_blank”>{{ link }}</a>
     </p>
   </div>
 </template>
