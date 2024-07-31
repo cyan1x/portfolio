@@ -3,6 +3,7 @@ import InlineCode from './components/InlineCode.vue'
 import VtuberRecs from './assets/vtuber-recs.jpg'
 import JPQuizWeb from './assets/jp-quiz-web.jpg'
 import Tempest from './assets/tempest.png'
+import RestAPI from './assets/rest-api.png'
 import ProjectCard from './components/ProjectCard.vue';
 </script>
 
@@ -54,9 +55,14 @@ import ProjectCard from './components/ProjectCard.vue';
       <hr class="h-1 bg-gray-200" />
 
       <h2 class="text-2xl font-bold">Projects</h2>
-      <ProjectCard title="rest-api (日本語解説あり)" flavorText="Read about it at" link="https://github.com/cyan1x/rest-api/">
-        A full-featured REST API backend for a (hypothetical) mobile app that tracks runs, such as sprints and
-        marathons.
+      <ProjectCard title="rest-api" :imgSrc="RestAPI" flavorText="Read about it at"
+        link="https://github.com/cyan1x/rest-api/">
+        <div class="flex flex-col gap-1">
+          <p class="text-sm text-gray-400">日本語解説あり</p>
+          <p>A full-featured REST API backend for a (hypothetical) mobile app that tracks runs, such as sprints and
+            marathons.</p>
+          <p>Check the GitHub repository for a more detailed description in both English and Japanese.</p>
+        </div>
         <template #tech-stack>
           <div>
             <table>
@@ -83,10 +89,42 @@ import ProjectCard from './components/ProjectCard.vue';
           </div>
         </template>
       </ProjectCard>
+      <ProjectCard title="Tempest" :imgSrc="Tempest" flavorText="Under construction">
+        <div class="flex flex-col gap-1">
+          <p>A highly customizable desktop application for managing videos and tracking total time watched.</p>
+          <p>I wrote the file browser UI from scratch, using elements from daisyUI.</p>
+        </div>
+        <template #tech-stack>
+          <div>
+            <table>
+              <tr>
+                <th class="border-2 border-gray-300 p-2" colspan="2">Teck stack</th>
+              </tr>
+              <tr>
+                <td class="border-2 border-gray-300 p-2">Framework</td>
+                <td class="border-2 border-gray-300 p-2"><a href="https://www.electronjs.org/">Electron</a>, <a
+                    href="https://vuejs.org/">Vue.js</a></td>
+              </tr>
+              <tr>
+                <td class="border-2 border-gray-300 p-2">Styling</td>
+                <td class="border-2 border-gray-300 p-2"><a href="https://tailwindcss.com/">Tailwind CSS</a></td>
+              </tr>
+              <tr>
+                <td class="border-2 border-gray-300 p-2">Components</td>
+                <td class="border-2 border-gray-300 p-2"><a href="https://daisyui.com/">daisyUI</a></td>
+              </tr>
+            </table>
+          </div>
+        </template>
+      </ProjectCard>
       <ProjectCard title="vtuber-recs" :imgSrc="VtuberRecs" flavorText="Check it out at"
         link="https://vtuber-recs.netlify.app/">
-        A recommendation list for any Japanese learner/speaker wanting to get into VTubers, complete with descriptions,
-        tags and links for each.
+        <div class="flex flex-col gap-1">
+          <p>A simple recommendation list for any Japanese learner/speaker wanting to get into VTubers, complete with
+            descriptions,
+            tags and links for each.</p>
+          <p>I will be adding more entries over time, as well as embedded YouTube clips.</p>
+        </div>
         <template #tech-stack>
           <div>
             <table>
@@ -106,8 +144,12 @@ import ProjectCard from './components/ProjectCard.vue';
         </template>
       </ProjectCard>
       <ProjectCard title="jp-quiz-web" :imgSrc="JPQuizWeb" flavorText="Play it at" link="https://jp-quiz.netlify.app/">
-        Test your Japanese (or English!) skills on this <a class="link"
-          href="https://monkeytype.com/">Monkeytype</a>-inspired quiz game.
+        <div class="flex flex-col gap-1">
+          <p>Test your Japanese (or English!) skills on this <a class="link"
+              href="https://monkeytype.com/">Monkeytype</a>-inspired quiz game.</p>
+          <p class="italic text-gray-500">Still thinking of ways to make this more fun. Let me know if you have any
+            ideas.</p>
+        </div>
         <template #tech-stack>
           <div>
             <table>
@@ -121,31 +163,6 @@ import ProjectCard from './components/ProjectCard.vue';
               <tr>
                 <td class="border-2 border-gray-300 p-2">Styling</td>
                 <td class="border-2 border-gray-300 p-2"><a href="https://tailwindcss.com/">Tailwind CSS</a></td>
-              </tr>
-            </table>
-          </div>
-        </template>
-      </ProjectCard>
-      <ProjectCard title="Tempest" :imgSrc="Tempest" flavorText="Under construction">
-        A highly customizable desktop application for managing videos and tracking total time watched.
-        <template #tech-stack>
-          <div>
-            <table>
-              <tr>
-                <th class="border-2 border-gray-300 p-2" colspan="2">Teck stack</th>
-              </tr>
-              <tr>
-                <td class="border-2 border-gray-300 p-2">Framework</td>
-                <td class="border-2 border-gray-300 p-2"><a href="https://www.electronjs.org/">Electron</a>, <a
-                    href="https://vuejs.org/">Vue.js</a></td>
-              </tr>
-              <tr>
-                <td class="border-2 border-gray-300 p-2">Styling</td>
-                <td class="border-2 border-gray-300 p-2"><a href="https://tailwindcss.com/">Tailwind CSS</a></td>
-              </tr>
-              <tr>
-                <td class="border-2 border-gray-300 p-2">Components</td>
-                <td class="border-2 border-gray-300 p-2"><a href="https://daisyui.com/">daisyUI</a></td>
               </tr>
             </table>
           </div>
